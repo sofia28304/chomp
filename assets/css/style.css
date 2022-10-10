@@ -3,3 +3,244 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+@font-face {
+    font-family: rocksalt;
+    src: url(../fonts/Rock_Salt/RockSalt-Regular.ttf);
+}
+
+@font-face {
+    font-family: nunitoBOLD;
+    src: url(../fonts/Nunito/static/Nunito-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: nunito;
+    src: url(../fonts/Nunito/Nunito-VariableFont_wght.ttf);
+}
+
+/* HEADER */
+header {
+    position: relative;
+}
+
+h1 {
+    font-family: rocksalt;
+    font-size: 3rem;
+    position: absolute;
+    left: 30%;
+    top: -1%;
+}
+
+header p {
+    font-family: nunito;
+    color: #DF8480;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 3%;
+    top: 15%;
+}
+
+img {
+    width: 100%;
+}
+
+/* Bei 100 vw geht das Bild rechts rüber und ich habe einen Horizontalscroll. Weil vw die 16px scrollbar mitnimmt und die Prozent-Angabe macht das nicht */
+
+/* MAIN */
+/* Main - How it works */
+main {
+    font-family: nunito;
+    margin-top: -3.7px;
+}
+
+.backgroundcolor {
+    background-color: #DF8480;
+    color: white;
+    text-align: center;
+    padding: 5%;
+    font-size: 1.5rem;
+}
+
+.howItWorks {
+    padding-bottom: 10px;
+}
+
+.Liste {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.ListBlock {
+    text-align: center;
+    /* margin: 3%; */
+    padding: 20px;
+}
+
+.ListenZahl {
+    font-family: nunitoBOLD;
+    color: #DF8480;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.ListText {
+    font-size: 1.5rem;
+}
+
+/* Main - Whats on the menu */
+.whatsMenue {}
+
+.MenuFlex {
+    display: flex;
+    flex-direction: column;
+}
+
+.Frenchie {
+    object-fit: cover;
+    height: 210px;
+}
+
+.bowlArticle {
+    background-image: url("../img/dog_bowl.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 150px;
+    position: relative;
+    /* background-color: blue; */
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
+}
+
+#locally {
+    font-size: 1.4rem;
+    position: absolute;
+    top: 60px;
+    left: 30px;
+}
+
+#delic {
+    font-size: 1.4rem;
+    position: absolute;
+    right: 1px;
+}
+
+#organic {
+    font-size: 1.4rem;
+    position: absolute;
+    left: 60px;
+    bottom: 60px;
+}
+
+.ourChefsArticle {
+    width: 450px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 0 30px 0;
+}
+
+.ourChefs {
+    /* text-align: center;
+    width: 80vw; */
+    font-size: 1.4rem;
+}
+
+/* FOOTER */
+footer {
+    background-color: black;
+}
+
+footer p {
+    font-family: nunito;
+    color: white;
+    text-align: center;
+    padding: 5%;
+}
+
+footer form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin: 2rem auto;
+}
+
+input {
+    width: 100%;
+    padding: 5px 15px;
+    border-radius: 74px;
+    margin: 5px 10px;
+    color: #DF8480;
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    padding: 5px 15px;
+    border-radius: 74px;
+    margin: 5px 10px;
+    background-color: #DF8480;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 1rem 3rem;
+}
+
+nav ul {
+    /* padding: 3rem 6rem; */
+    display: flex;
+    justify-content: center;
+}
+
+/* Media Queries */
+/* Bis 600 px: Small
+601 px - 900 px: Medium
+901 px - 1200 px: Large
+Alles größer als 1201 px: Extra Large
+ */
+/* mediaquery Medium */
+@media only screen and (min-width: 901px) {
+    header {
+        height: 600px;
+        /* display: flex; */
+    }
+
+    header h1 {
+        font-family: rocksalt;
+        font-size: 2rem;
+        position: absolute;
+        /* justify-self: center; */
+        margin: 0 20% 0 20%;
+        align-self: center;
+    }
+
+    header p {
+        background: #DF8480;
+        font-size: 2rem;
+        color: white;
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        left: 0;
+        top: 20%;
+    }
+
+    header img {
+        position: absolute;
+        right: 0;
+        top: 20%;
+        height: 400px;
+        width: auto;
+    }
+}
